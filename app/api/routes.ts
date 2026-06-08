@@ -3,6 +3,9 @@ import { readdir } from "node:fs/promises";
 import { pathToFileURL } from "node:url";
 import { Router } from "express";
 import { createLogger } from "~/lib/logger";
+import inventoryRoutes from "~/florista/inventory/api/inventory.routes";
+import ordersRoutes from "~/florista/orders/api/orders.routes";
+import deliveriesRoutes from "~/florista/deliveries/api/deliveries.routes";
 
 type RouteModule = {
   default?: ReturnType<typeof Router>;
@@ -61,5 +64,10 @@ async function registerModuleRoutes(): Promise<void> {
 }
 
 await registerModuleRoutes();
+
+// Florista domain routes
+router.use(inventoryRoutes);
+router.use(ordersRoutes);
+router.use(deliveriesRoutes);
 
 export default router;
