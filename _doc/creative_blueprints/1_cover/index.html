@@ -1,0 +1,56 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-content-col { width: 52%; }
+  .mode-landscape .sl-visual-col { width: 48%; }
+  .mode-portrait .sl-content-col { width: 100%; }
+  .mode-portrait .sl-visual-col { width: 100%; flex: 1; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full p-10 gap-8">
+
+    <!-- Left: content column -->
+    <div class="sl-content-col flex flex-col justify-between">
+      <!-- Top label -->
+      <div>
+        <span class="inline-block bg-emerald-100 text-emerald-800 text-xs font-semibold tracking-widest uppercase px-3 py-1 rounded-full">Florist Management</span>
+      </div>
+
+      <!-- Headline + tagline -->
+      <div class="flex flex-col gap-5">
+        <h1 class="text-5xl font-extrabold leading-tight text-slate-900 tracking-tight">
+          Fresh orders.<br/>
+          Zero waste.<br/>
+          <span class="text-emerald-600">On time.</span>
+        </h1>
+        <p class="text-lg text-slate-600 leading-relaxed max-w-sm">
+          A purpose-built workspace for florist shop owners — manage flower inventory, bouquet orders, and delivery schedules from one calm, clear dashboard.
+        </p>
+
+        <!-- CTA pill -->
+        <div class="flex items-center gap-3 mt-2">
+          <span class="bg-emerald-600 text-white text-sm font-semibold px-5 py-2 rounded-full shadow">Minimize Spoilage</span>
+          <span class="bg-slate-100 text-slate-700 text-sm font-semibold px-5 py-2 rounded-full">Deliver On Time</span>
+        </div>
+      </div>
+
+      <!-- Attribution -->
+      <div>
+        <data-attribution />
+      </div>
+    </div>
+
+    <!-- Right: visual column -->
+    <div class="sl-visual-col rounded-2xl overflow-hidden shadow-lg relative">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=A%20beautifully%20arranged%20flower%20shop%20counter%20with%20vibrant%20fresh%20bouquets%2C%20soft%20morning%20light%2C%20editorial%20photography%2C%20calm%20and%20premium%20atmosphere"
+        alt="Florist shop with fresh bouquets"
+        class="w-full h-full object-cover"
+      />
+      <!-- subtle overlay for depth -->
+      <div class="absolute inset-0 bg-gradient-to-t from-emerald-900/20 to-transparent"></div>
+    </div>
+
+  </div>
+</section>
