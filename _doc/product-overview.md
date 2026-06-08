@@ -1,7 +1,7 @@
-# Florista — Product Overview
+# BloomOps — Product Overview
 
 ## What It Is
-Florista is an operations platform built for independent and small-chain florist shop owners. It unifies flower inventory management, bouquet order tracking, and delivery scheduling into a single, purpose-built dashboard — with one primary goal: minimize spoilage and ensure every arrangement arrives fresh and on time.
+BloomOps is an operations platform built for independent and small-chain florist shop owners. It unifies flower inventory management, bouquet order tracking, and delivery scheduling into a single, purpose-built dashboard — with one primary goal: minimize spoilage and ensure every arrangement arrives fresh and on time.
 
 ## The Problem
 Flowers are highly perishable. Without shelf-life-aware tracking, shop owners over-order, mis-allocate stock, and routinely lose 20–40% of inventory to spoilage. Simultaneously, bouquet orders taken by phone or on paper get lost, confused, or mis-prioritized. Delivery logistics — especially at peak demand (Valentine's Day, Mother's Day, holidays) — become unmanageable without a structured scheduling system. The result: wasted stock, unhappy customers, and avoidable revenue loss.
