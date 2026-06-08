@@ -1,4 +1,4 @@
-# BloomOps — Product Overview
+# Florista — Product Overview
 
 ## What It Is
 BloomOps is an operations platform built for independent and small-chain florist shop owners. It unifies flower inventory management, bouquet order tracking, and delivery scheduling into a single, purpose-built dashboard — with one primary goal: minimize spoilage and ensure every arrangement arrives fresh and on time.
