@@ -17,21 +17,14 @@ build:
         - "--cache-from=quantumteknologi/22fdycqh-4576-development:latest"
         - "--build-arg=BUILDKIT_INLINE_CACHE=1"
     sync:
-      manual:
-        - src: 'app/**/*'
-          dest: /app
-        - src: 'src/**/*'
-          dest: /app
-        - src: 'public/**/*'
-          dest: /app
-        - src: 'components/**/*'
-          dest: /app
-        - src: '*.ts'
-          dest: /app
-        - src: '*.js'
-          dest: /app
-        - src: 'tsconfig.json'
-          dest: /app
+      infer:
+        - 'app/**/*'
+        - 'src/**/*'
+        - 'public/**/*'
+        - 'components/**/*'
+        - '*.ts'
+        - '*.js'
+        - 'tsconfig.json'
 manifests:
   rawYaml:
     - k8s/*.yaml

@@ -188,7 +188,7 @@ export default function DashboardPage() {
               to="/dashboard/orders"
               className="flex items-center gap-1 text-xs text-emerald-600 hover:text-emerald-700"
             >
-              View all <ArrowRight className="h-3 w-3" />
+              View all123 <ArrowRight className="h-3 w-3" />
             </Link>
           </CardHeader>
           <CardContent className="space-y-3">
