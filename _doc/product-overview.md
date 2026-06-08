@@ -1,0 +1,1 @@
+Build me an app for florist shop owners to help them manage flower inventory, bouquet orders, and delivery schedules with the goal to minimize spoilage and deliver fresh arrangements on time
