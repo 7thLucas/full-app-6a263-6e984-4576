@@ -50,3 +50,16 @@ Florista gives florist shop owners the operational clarity they need to run a le
 - Customer-facing ordering portal
 - Demand forecasting / predictive analytics
 - Multi-location management console
+
+## Post-MVP Roadmap
+
+Three concrete product capabilities are planned as the immediate next phase after MVP launch:
+
+### Supplier Reorder Automation
+Closes the loop between spoilage tracking and restocking. Shop owners configure low-stock thresholds and preferred suppliers per flower variety. When inventory drops below threshold, a low-stock alert surfaces on the dashboard with a one-click reorder action that notifies the supplier and logs the order. A reorder history log tracks status (pending / received / cancelled). No external EDI or payment integration — operational simplicity first.
+
+### Customer Order Portal
+A lightweight, publicly accessible web page per shop where customers can browse available bouquets and submit orders with their contact and delivery details. No customer account or payment required. All submitted orders flow directly into the shop's existing order board tagged as 'Customer Portal' source. Shop owners can enable or disable their portal from admin settings. Designed as a digital replacement for phone/paper orders, not a full e-commerce storefront.
+
+### Analytics & Spoilage Reporting Dashboard
+Turns the operational data captured by the MVP into actionable business intelligence. Provides four key metrics — spoilage rate by flower variety, order volume trend, delivery on-time rate, and estimated waste cost — with a configurable date range filter and CSV export. All data is derived from existing inventory and order records; no new data capture required. Validates the platform's core promise of measurable spoilage reduction.
