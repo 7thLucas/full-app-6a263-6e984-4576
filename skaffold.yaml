@@ -1,0 +1,39 @@
+apiVersion: skaffold/v4beta7
+kind: Config
+build:
+  tagPolicy:
+    customTemplate:
+      template: "latest"
+  local:
+    push: true
+    useBuildkit: true
+    concurrency: 0
+  artifacts:
+  - image: quantumteknologi/22fdycqh-4576-development
+    context: .
+    docker:
+      dockerfile: Dockerfile.dev
+      cliFlags:
+        - "--cache-from=quantumteknologi/22fdycqh-4576-development:latest"
+        - "--build-arg=BUILDKIT_INLINE_CACHE=1"
+    sync:
+      manual:
+        - src: 'app/**/*'
+          dest: /app
+        - src: 'src/**/*'
+          dest: /app
+        - src: 'public/**/*'
+          dest: /app
+        - src: 'components/**/*'
+          dest: /app
+        - src: '*.ts'
+          dest: /app
+        - src: '*.js'
+          dest: /app
+        - src: 'tsconfig.json'
+          dest: /app
+manifests:
+  rawYaml:
+    - k8s/*.yaml
+deploy:
+  kubectl: {}
