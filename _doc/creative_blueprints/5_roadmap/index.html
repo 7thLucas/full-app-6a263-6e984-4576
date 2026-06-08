@@ -1,0 +1,111 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: column; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex flex-col h-full p-10 gap-6">
+
+    <!-- Header -->
+    <div class="flex flex-col gap-1">
+      <span class="text-xs font-semibold tracking-widest text-slate-400 uppercase">What's Next</span>
+      <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Post-MVP roadmap: three capabilities that extend the platform</h2>
+    </div>
+
+    <!-- Roadmap cards: three columns -->
+    <div class="grid grid-cols-3 gap-5 flex-1">
+
+      <!-- Phase 1: Supplier Reorder Automation -->
+      <div class="flex flex-col gap-4 rounded-2xl border border-emerald-200 bg-emerald-50 p-6">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 bg-emerald-600 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+            </svg>
+          </div>
+          <span class="text-xs font-bold text-emerald-700 uppercase tracking-wide">Phase 1</span>
+        </div>
+        <h3 class="font-extrabold text-slate-900 text-base leading-snug">Supplier Reorder Automation</h3>
+        <p class="text-xs text-slate-600 leading-relaxed flex-1">Configure low-stock thresholds per flower variety. When inventory dips below the limit, a low-stock alert surfaces with a one-click reorder that notifies the supplier and logs the order — closing the gap between spoilage tracking and restocking.</p>
+        <div class="flex flex-col gap-1.5 mt-auto">
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>
+            <span class="text-xs text-slate-700">Per-variety reorder rules</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>
+            <span class="text-xs text-slate-700">Supplier contact management</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0"></span>
+            <span class="text-xs text-slate-700">Reorder history &amp; status log</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 2: Customer Order Portal -->
+      <div class="flex flex-col gap-4 rounded-2xl border border-rose-200 bg-rose-50 p-6">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 bg-rose-500 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.4 5.6A1 1 0 006.6 20H17m-10 0a1 1 0 102 0 1 1 0 00-2 0m8 0a1 1 0 102 0 1 1 0 00-2 0" />
+            </svg>
+          </div>
+          <span class="text-xs font-bold text-rose-600 uppercase tracking-wide">Phase 2</span>
+        </div>
+        <h3 class="font-extrabold text-slate-900 text-base leading-snug">Customer Order Portal</h3>
+        <p class="text-xs text-slate-600 leading-relaxed flex-1">A publicly accessible bouquet catalog where customers browse and place orders — no account, no payment required. Submitted orders flow directly into the shop's order board, replacing phone and paper with a clean digital channel.</p>
+        <div class="flex flex-col gap-1.5 mt-auto">
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-rose-400 flex-shrink-0"></span>
+            <span class="text-xs text-slate-700">Public bouquet catalog per shop</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-rose-400 flex-shrink-0"></span>
+            <span class="text-xs text-slate-700">Order form with confirmation email</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-rose-400 flex-shrink-0"></span>
+            <span class="text-xs text-slate-700">Shop-controlled portal toggle</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Phase 3: Analytics & Spoilage Reporting -->
+      <div class="flex flex-col gap-4 rounded-2xl border border-violet-200 bg-violet-50 p-6">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 bg-violet-600 rounded-xl flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+          </div>
+          <span class="text-xs font-bold text-violet-600 uppercase tracking-wide">Phase 3</span>
+        </div>
+        <h3 class="font-extrabold text-slate-900 text-base leading-snug">Analytics &amp; Spoilage Reporting</h3>
+        <p class="text-xs text-slate-600 leading-relaxed flex-1">Turns existing operational data into actionable business intelligence. Spoilage trends by variety, order volume over time, delivery on-time rate, and estimated waste cost — all with date-range filtering and CSV export. No new data entry required.</p>
+        <div class="flex flex-col gap-1.5 mt-auto">
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-violet-500 flex-shrink-0"></span>
+            <span class="text-xs text-slate-700">Spoilage rate &amp; waste cost metrics</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-violet-500 flex-shrink-0"></span>
+            <span class="text-xs text-slate-700">Order volume &amp; delivery performance</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-violet-500 flex-shrink-0"></span>
+            <span class="text-xs text-slate-700">Date-range filter &amp; CSV export</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer note -->
+    <div class="flex items-center justify-between">
+      <p class="text-xs text-slate-400 italic">All three phases derive exclusively from data already captured by the MVP — no new infrastructure required to begin.</p>
+      <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 border border-emerald-200 rounded-full px-4 py-1.5">Built on the BloomOps foundation</span>
+    </div>
+
+  </div>
+</section>
