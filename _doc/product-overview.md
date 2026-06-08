@@ -38,6 +38,12 @@ Florista gives florist shop owners the operational clarity they need to run a le
 - Order board — create, track, and fulfill bouquet orders
 - Delivery scheduler — calendar view, driver assignment, route summary
 - Spoilage dashboard — at-risk stock overview and use-first recommendations
+- Role-based access control — shop owners, staff, and delivery drivers each see only what's relevant to their role
+
+**Target outcomes (aspirational, platform-enabled):**
+- ~40% reduction in flower waste through proactive spoilage alerts and FIFO prioritization (industry baseline: shops lose 20–40% of stock without tracking)
+- Near-perfect on-time delivery rate through structured scheduling vs. ad-hoc coordination
+- 100% order capture and tracking — no bouquet falls through without a status trail
 
 **Out of scope for MVP:**
 - Point-of-sale integration
