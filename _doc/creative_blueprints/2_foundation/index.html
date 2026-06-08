@@ -1,0 +1,70 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-left { width: 55%; }
+  .mode-landscape .sl-right { width: 45%; }
+  .mode-portrait .sl-left { width: 100%; }
+  .mode-portrait .sl-right { width: 100%; flex: 1; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full p-10 gap-10">
+
+    <!-- Left: problem + solution narrative -->
+    <div class="sl-left flex flex-col justify-center gap-8">
+
+      <!-- Section label -->
+      <span class="text-xs font-semibold tracking-widest text-slate-400 uppercase">The Challenge &amp; The Answer</span>
+
+      <!-- Problem -->
+      <div class="flex flex-col gap-3">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-rose-500 inline-block"></span>
+          <h2 class="text-xl font-bold text-slate-900">The Problem</h2>
+        </div>
+        <p class="text-slate-600 leading-relaxed text-base">
+          Florist shop owners juggle perishable inventory, hand-written order books, and ad-hoc delivery coordination every single day. Flowers spoil when stock isn't tracked. Orders fall through the cracks when there's no single view. Late deliveries damage hard-earned customer trust.
+        </p>
+        <ul class="flex flex-col gap-2 mt-1">
+          <li class="flex items-start gap-2 text-sm text-slate-700">
+            <span class="mt-1 text-rose-400 font-bold">—</span>
+            Flower waste from poor stock visibility drives up costs
+          </li>
+          <li class="flex items-start gap-2 text-sm text-slate-700">
+            <span class="mt-1 text-rose-400 font-bold">—</span>
+            Manual order tracking leads to missed or wrong arrangements
+          </li>
+          <li class="flex items-start gap-2 text-sm text-slate-700">
+            <span class="mt-1 text-rose-400 font-bold">—</span>
+            No delivery schedule visibility means late arrivals and unhappy customers
+          </li>
+        </ul>
+      </div>
+
+      <!-- Divider -->
+      <div class="border-t border-slate-100"></div>
+
+      <!-- Solution -->
+      <div class="flex flex-col gap-3">
+        <div class="flex items-center gap-2">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span>
+          <h2 class="text-xl font-bold text-slate-900">The Solution</h2>
+        </div>
+        <p class="text-slate-600 leading-relaxed text-base">
+          A focused management app built specifically for florist shop owners. Track live inventory levels, manage bouquet orders end-to-end, and plan delivery schedules — all in one place. Real-time stock alerts cut spoilage. Clear order timelines prevent mistakes. Delivery views keep every arrangement arriving fresh and on time.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Right: supporting visual -->
+    <div class="sl-right rounded-2xl overflow-hidden shadow-md">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=A%20florist%20reviewing%20a%20clean%20digital%20dashboard%20on%20a%20tablet%20surrounded%20by%20fresh%20flowers%2C%20warm%20natural%20light%2C%20calm%20and%20editorial%20style"
+        alt="Florist using management dashboard"
+        class="w-full h-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>
